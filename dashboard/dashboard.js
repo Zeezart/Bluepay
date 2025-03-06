@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Toggle sidebar on mobile
+
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const sidebar = document.querySelector('.sidebar');
     const sidebarOverlay = document.querySelector('.sidebar-overlay');
@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebar.classList.toggle('active');
         sidebarOverlay.classList.toggle('active');
         
-        // Change the menu icon
         const icon = this.querySelector('i');
         if (sidebar.classList.contains('active')) {
           icon.classList.remove('fa-bars');
@@ -20,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }
-    
-    // Close sidebar when clicking overlay
+ 
     if (sidebarOverlay) {
       sidebarOverlay.addEventListener('click', function() {
         sidebar.classList.remove('active');
@@ -34,17 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
-    // Handle form submission
+
     const kycForm = document.getElementById('kycForm');
     if (kycForm) {
       kycForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        // Show success modal
         document.getElementById('successModal').style.display = 'flex';
       });
     }
-    
-    // Close modal
+
     const closeModalBtn = document.getElementById('closeModalBtn');
     const getStartedBtn = document.getElementById('getStartedBtn');
     
@@ -57,12 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (getStartedBtn) {
       getStartedBtn.addEventListener('click', function() {
         document.getElementById('successModal').style.display = 'none';
-        // Navigate to dashboard or handle next step
-        alert('Getting started with BluePay!');
+
       });
     }
   
-    // Initially hide success modal
     const successModal = document.getElementById('successModal');
     if (successModal) {
       successModal.style.display = 'none';
@@ -94,10 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (useBusinessAddressCheckbox) {
       useBusinessAddressCheckbox.addEventListener('change', function() {
         if (this.checked) {
-          // In a real app, this would populate the address fields with business address
           console.log('Using business address');
         } else {
-          // Clear the address fields
           console.log('Not using business address');
         }
       });
@@ -113,22 +105,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const fileInput = document.createElement('input');
         fileInput.type = 'file';
         fileInput.accept = 'image/*,.pdf';
-        
-        // Trigger the file dialog
+
         fileInput.click();
         
-        // Handle file selection
+
         fileInput.addEventListener('change', function() {
           if (this.files && this.files[0]) {
             const file = this.files[0];
             
-            // Check file size (5MB max)
+
             if (file.size > 5 * 1024 * 1024) {
               alert('File is too large. Maximum size is 5MB.');
               return;
             }
             
-            // Update the upload container to show the selected file
             const uploadContainer = document.querySelector('.upload-container');
             const uploadText = document.querySelector('.upload-text');
             

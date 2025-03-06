@@ -44,7 +44,7 @@ body {
   margin-left: 20%;
 }
 
-/* Icon size utilities */
+
 .w-4 {
   width: 16px;
   height: 16px;
@@ -60,7 +60,7 @@ body {
   height: 24px;
 }
 
-/* Sidebar Styles */
+/* Sidebar Styles Section */
 .sidebar {
   width: 20%;
   background-color: var(--darker-blue);
@@ -132,7 +132,7 @@ body {
   height: 20px;
 }
 
-/* Top Navbar Styles */
+/* Top Navbar Sction */
 .top-navbar {
   background-color: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -168,7 +168,7 @@ body {
   color: var(--medium-gray);
 }
 
-/* DASHBOARD MAIN CONTENT STYLING */
+/* DASHBARD MAIN CONTENT STYLING */
 .kyc-content {
   overflow-x: hidden;
 }
@@ -421,7 +421,7 @@ body {
   background-color: var(--dark-blue);
 }
 
-/* Mobile Styles */
+/* Mobile Styles cOmponents*/
 .mobile-menu-toggle {
   display: none;
   background: none;
@@ -446,7 +446,7 @@ body {
   z-index: 1000;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 900px) {
   .sidebar {
     width: 250px;
     position: fixed;
@@ -495,7 +495,7 @@ body {
   }
   
   .identification-form {
-    padding: 20px !important;
+    padding: 20px;
     margin: 1rem auto;
   }
   
@@ -506,7 +506,7 @@ body {
   
   .form-actions .btn {
     margin-bottom: 10px;
-    margin-left: 0 !important;
+    margin-left: 0 ;
   }
   
   .success-modal {
@@ -516,52 +516,8 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .progress-tab {
-    padding: 1.5rem 1rem;
-  }
-  
-  .kyc-steps {
-    padding-left: 0;
-  }
-  
-  .identification-form {
-    padding: 15px !important;
-    margin-top: 1rem;
-  }
-  
-  .form-actions {
-    flex-direction: column;
-  }
-  
-  .form-actions .btn {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .progress-percent {
-    text-align: left;
-  }
 
-  .upload-container {
-    padding: 15px !important;
-  }
-
-  .modal-title {
-    font-size: 1.2rem;
-  }
-  
-  .modal-subtitle {
-    font-size: 1rem;
-  }
-}
-
-/* Sidebar overlay for mobile */
+/* overlay for mobile */
 .sidebar-overlay {
   display: none;
   position: fixed;
@@ -577,32 +533,4 @@ body {
   display: block;
 }
 
-/* Specific fixes for very small screens */
-@media (max-width: 480px) {
-  .kyc-progress-container {
-    padding: 8px;
-    font-size: 0.8rem;
-  }
-  
-  .proceed-link {
-    display: block;
-    margin-top: 5px;
-  }
-  
-  .user-profile {
-    font-size: 0.8rem;
-  }
-  
-  .avatar-placeholder {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .top-navbar {
-    padding: 0.5rem !important;
-  }
-  
-  .progress-tab {
-    padding: 1rem 0.5rem;
-  }
-}
+
