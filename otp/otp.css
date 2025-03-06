@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+  :root {
+    --primary-blue: #0C74B1;
+    --light-blue: #CFE5F2;
+    --dark-blue: #005a9e;
+    --text-color: #405979;
+    --light-gray: #FFF;
+    --darker-blue: #062C5A;
+  }
+  
+
+  .otp-page {
+    background-color: var(--primary-blue);
+  }
+  
+  .otp-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-logo {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .top-logo img {
+    height: 40px;
+  }
+  
+  .back-button {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .back-button .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .otp-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: auto;
+  }
+  
+  .shield-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e6f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .shield-icon i {
+    font-size: 30px;
+    color: var(--primary-blue);
+  }
+  
+  .otp-inputs {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  
+  .otp-input {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .btn-login {
+    padding: 0.8rem;
+    background-color: var(--primary-blue);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: #2482b9;
+        color: #fff;
+    };
+    &:disabled{
+        background-color: var(--light-blue);
+        color: #fff;
+    };
+  }
+
+  .text-primary{
+    color: #0C74B1;
+    color: red;
+    text-decoration: none;
+}
+  
+  .otp-input.active {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.25rem rgba(0, 113, 188, 0.1);
+  }
+  
+  .otp-footer {
+    margin-top: auto;
+    padding-top: 2rem;
+  }
+  
+  @media (max-width: 767.98px) {
+    .otp-container {
+      padding: 1.5rem 1rem;
+    }
+    
+    .otp-card {
+      padding: 1.5rem;
+    }
+    
+    .otp-input {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

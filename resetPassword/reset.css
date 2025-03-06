@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-blue: #0C74B1;
+    --light-blue: #CFE5F2;
+    --dark-blue: #005a9e;
+    --text-color: #405979;
+    --light-gray: #FFF;
+    --darker-blue: #062C5A;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C74B1;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+  .logo {
+    object-fit: contain;
+  }
+  
+  .back-btn {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    margin-left: 40px;
+  }
+  
+  .size-info {
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .verification-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    
+  }
+  
+  
+  
+  .card-title {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .card-text {
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  
+  
+  .form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--darker-blue);
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .form-control {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: var(--light-gray);
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.25rem rgba(0, 113, 188, 0.1);
+  }
+
+  .input-field{
+    background: rgb(250, 250, 250);
+    color: #062C5A;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.input-small-text{
+    font-size: 14px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--primary-blue);
+  }
+  
+
+  .btn-login {
+    padding: 0.8rem;
+    background-color: var(--primary-blue);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: var(--primary-blue);
+        color: white;
+    };
+    &:disabled{
+        background-color: var(--light-blue);
+
+    };
+  }
+
+
+  .footer-text {
+    margin-top: 60px;
+    font-size: 14px;
+  }
+
+  .display{
+    display: none;
+  }
+  
+  /* Make sure the verification card is properly centered */
+  @media (max-width: 768px) {
+    .verification-card {
+      margin: 0 20px;
+    }
+    
+    .back-btn {
+      margin-left: 20px;
+    }
+  }
+  

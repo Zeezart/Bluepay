@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePay Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid  px-0">
+        <div class="d-flex flex-row">
+            <div class="left-panel position-fixed top-0 vh-100">
+                <img src="../assets/logo.svg" class="mt-5 ms-3"/>
+            </div>
+            <div class="d-flex align-items-center right-panel ">
+                <div class="form-container">
+                    <div class="mb-5">
+                        <h2 class="fw-bold darker-text">Create Your Account</h2>
+                        <p class="text-muted dark-text input-small-text">Provide your basic information</p>
+                    </div>
+                    
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label class="form-label input-small-text dark-text">Country</label>
+                            <select class="form-select input-field select-field" required>
+                                <option selected>Nigeria</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label dark-text input-small-text">Business Name</label>
+                            <input type="text" class="form-control input-field" required>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label dark-text input-small-text">First Name</label>
+                                <input type="text" class="form-control input-field" required>
+                            </div>
+                            <div class="col">
+                                <label class="form-label dark-text input-small-text">Last Name</label>
+                                <input type="text" class="form-control input-field" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <div class="input-group">
+                                <span class="input-field custom-span">+234</span>
+                                <input type="text" class="form-control input-field ms-3" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label dark-text input-small-text">Email</label>
+                            <input type="email" class="form-control input-field"required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label input-small-text dark-text">Business/Registration Type</label>
+                            <select class="form-select select-field input-field"required >
+                                <option selected>Select business type</option>
+                                <option>Unregistered/Starter business</option>
+                                <option>Business name registration</option>
+                                <option>Partnership</option>
+                                <option>Private limited liability company</option>
+                                <option>Public limited liability company</option>
+                                <option>Non-governmental organization (NGO)</option>
+                                <option>Co-operative society</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="password" class="form-label dark-text input-small-text">Password</label>
+                            <div class="input-group position-relative">
+                            <input type="password" class="form-control input-field" id="password" placeholder="Enter password">
+                            <span class="password-toggle" id="togglePassword">
+                                <i class="fa-regular fa-eye"></i>
+                              </span>
+                            </div>
+                            <!-- Password Requirements -->
+                            <div class="password-requirements mt-2">
+                            <p class="requirement" id="length-check">Your password must contain at least 8 characters.</p>
+                            <p class="requirement" id="lowercase-check">at least 1 lowercase letter</p>
+                            <p class="requirement" id="uppercase-check">at least 1 uppercase character (A-Z)</p>
+                            <p class="requirement" id="number-check">at least 1 Digit (0-9)</p>
+                            <p class="requirement" id="special-check">at least 1 Special characters (!@#$_)</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Register Button -->
+                        <div class="mb-3 mt-4">
+                            <button type="submit" class="btn btn-primary w-100" id="registerButton" disabled>Register</button>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary w-100">Register</button> -->
+
+                        <div class="mt-5">
+                            <p >By clicking the “Register” button, you agree to <a href="">BluePay’s privacy policy </a> and <a href="">terms of acceptable use and data processing.</a>
+                            </p>
+                            <hr />
+                            <p class="text-center">Already have an account?  <a href="../login/index.html">Login</a></p>
+                        </div>
+
+                        
+
+                        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

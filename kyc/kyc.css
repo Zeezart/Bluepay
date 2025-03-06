@@ -1,0 +1,212 @@
+/* KYC Compliance Styles */
+:root {
+    --primary-blue: #0071bc;
+    --light-blue: #e6f7ff;
+    --dark-blue: #005a9e;
+    --dark-navy: #002a3d;
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+    --medium-gray: #6c757d;
+    --success-green: #28a745;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+  }
+  
+
+.sidebar {
+    background-color: var(--dark-navy);
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .sidebar-logo {
+    height: 30px;
+  }
+  
+  .test-mode-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .sidebar-menu .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-menu .nav-link:hover,
+  .sidebar-menu .nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar-menu .nav-link i {
+    width: 20px;
+    text-align: center;
+  }
+  
+  .main-content {
+    background-color: #f5f8fa;
+    min-height: 100vh;
+  }
+  
+  .top-navbar {
+    background-color: white;
+    border-bottom: 1px solid #e6e9ec;
+  }
+  
+  .notification-icon {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #f03e3e;
+    color: white;
+    font-size: 0.6rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-profile {
+    cursor: pointer;
+  }
+  
+  .user-name {
+    font-weight: 500;
+  }
+  
+  .user-id {
+    color: #6c757d;
+  }
+  
+  .small-icon {
+    font-size: 0.7rem;
+  }
+  
+  .kyc-progress-container {
+    border-bottom: 1px solid #e6e9ec;
+  }
+  
+  .progress-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-blue);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.8rem;
+  }
+  
+  .proceed-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .kyc-steps .step {
+    display: flex;
+    align-items: center;
+  }
+  
+  .step-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #ddd;
+  }
+  
+  .step-icon.completed {
+    background-color: var(--success-green);
+    border-color: var(--success-green);
+    color: white;
+  }
+  
+  .identification-form {
+    background-color: white;
+  }
+  
+  .select-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--medium-gray);
+  }
+  
+  .upload-container {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-container:hover {
+    background-color: var(--light-gray);
+  }
+  
+  .upload-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .form-actions .btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .form-actions .btn-outline-secondary {
+    color: var(--medium-gray);
+    border-color: #ddd;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--medium-gray);
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: var(--light-gray);
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.25rem rgba(0, 113, 188, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+  }
+  

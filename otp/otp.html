@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BluePay - OTP Verification</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="otp.css">
+  </head>
+
+  <body class="otp-page">
+    <div class="container-fluid p-0 vh-100 position-relative">
+        <div class="mt-4">
+            <div class="col-12">
+              <div class="container">
+                <img src="../assets/logo.svg" alt="BluePay Logo" class="logo">
+              </div>
+            </div>
+        </div>>
+      <div class="otp-container">
+        
+        <!-- Back Button -->
+        <div class="position-relative my-3 mb-4">
+          <a href="../login/index.html"><img src="../assets/back-icon.svg"/></a>
+            
+        </div>
+        
+        <!-- OTP Card -->
+        <div class="otp-card">
+          <h2 class="text-center fw-bold mb-2">Enter OTP</h2>
+          <p class="text-center text-muted mb-4">
+            Enter the 6-digit verification code sent to<br>
+            your email address (joh****3@gmail.com)
+          </p>
+          
+          <!-- Security Icon -->
+          <div class="text-center mb-4">
+            <div class="shield-icon">
+              <img src="/assets//shield.svg"/>
+            </div>
+          </div>
+          
+          <!-- OTP Input Fields -->
+          <div class="otp-inputs d-flex justify-content-center gap-2 mb-3">
+            <input type="text" maxlength="1" class="form-control otp-input active" id="otp-input1" autofocus>
+            <input type="text" maxlength="1" class="form-control otp-input" id="otp-input2">
+            <input type="text" maxlength="1" class="form-control otp-input" id="otp-input3">
+            <input type="text" maxlength="1" class="form-control otp-input" id="otp-input4">
+            <input type="text" maxlength="1" class="form-control otp-input" id="otp-input5">
+            <input type="text" maxlength="1" class="form-control otp-input" id="otp-input6">
+          </div>
+          
+          <!-- Resend Code Timer -->
+          <p class="text-center mb-4" id="resend">Resend code in <span id="timer">90</span> seconds</p>
+          
+          <!-- Login Button -->
+          <button type="button" class="btn btn-login w-100 mb-4" disabled id="submit">Login</button>
+        </div>
+        
+        <!-- Footer -->
+        <div class="otp-footer">
+          <p class="text-center text-white mb-1">BluePay Payment Gateway</p>
+          <p class="text-center text-white small">Licensed by the Central Bank of Nigeria (CBN)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="otp.js"></script>
+  </body>
+</html>

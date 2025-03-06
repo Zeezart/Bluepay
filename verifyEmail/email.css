@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C74B1;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+  .logo {
+    object-fit: contain;
+  }
+  
+  .back-btn {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    margin-left: 40px;
+  }
+  
+  .size-info {
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .verification-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .email-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .card-title {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .card-text {
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .email-highlight {
+    color: #0074b2;
+    font-weight: 500;
+  }
+  
+  .resend-text {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .countdown {
+    color: #0074b2;
+    font-weight: 500;
+  }
+  
+  .footer-text {
+    margin-top: 60px;
+    font-size: 14px;
+  }
+  
+  /* Make sure the verification card is properly centered */
+  @media (max-width: 768px) {
+    .verification-card {
+      margin: 0 20px;
+    }
+    
+    .back-btn {
+      margin-left: 20px;
+    }
+  }
+  
