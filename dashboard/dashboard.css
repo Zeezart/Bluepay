@@ -473,6 +473,10 @@ body {
     margin-left: 0;
   
   }
+
+  .test-mode-badge{
+    display: none;
+  }
   
   .kyc-progress-container {
     flex-direction: column;
