@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="verification.css">
+    
+</head>
+<body>
+   
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="sidebar-header">
+            <div class="logo-container">
+              <img src="../assets/logo.svg" class="logo">
+            </div>
+          </div>
+          
+          <nav class="sidebar-menu">
+            <ul class="nav-list">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-file-alt nav-icon"></i>
+                  <span>Compliance</span>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span>Home</span>
+                  </a>
+              </li>
+  
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-chart-pie nav-icon"></i>
+                    <span>Overview</span>
+                  </a>
+              </li>
+  
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-exchange-alt nav-icon"></i>
+                    <span>Transactions</span>
+                  </a>
+              </li>
+  
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fas fa-cog nav-icon"></i>
+                    <span>Settings</span>
+                  </a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+  
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- Mobile logo container -->
+        <div class="mobile-logo-container">
+          <img src="../assets/logo.svg" class="logo" style="margin-left: 0;">
+        </div>
+  
+        <div class="sidebar-overlay"></div>
+  
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Top Navbar -->
+          <header class="dashboard-header">
+              <h1 class="page-title">Pending Compliance(32)</h1>
+              <div class="header-right">
+                <div class="notification-bell">
+                  <i class="bi bi-bell"></i>
+                  <span class="notification-badge">5</span>
+                </div>
+                <div class="user-profile">
+                  <img src="../assets/profilePicture.png" alt="User Profile" class="profile-image">
+                  <div class="user-info">
+                    <div class="user-name">Rotimi David</div>
+                    <div class="user-role">Compliance Officer</div>
+                  </div>
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+              </div>
+            </header>
+       
+          <!-- Dashboard Content -->
+          <div class="dashboard-content">
+             <!--  -->
+             <div class="container">
+                <div class="email-icon-container">
+                    <img src="../assets/dark-back-icon.png">
+                  </div>
+                
+                <div class="tabs-container">
+                    <div class="tab-options" id="verificationTabs" role="tablist">
+                        <div class="tab-item" role="presentation">
+                            <button class="tab-button" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="false">Compliance Details</button>
+                        </div>
+                        <div class="tab-item" role="presentation">
+                            <button class="tab-button active" id="verification-tab" data-bs-toggle="tab" data-bs-target="#verification" type="button" role="tab" aria-controls="verification" aria-selected="true">Verification Result</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="verificationTabsContent">
+                        <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
+                            <!-- Compliance details content would go here -->
+                            <div class="tab-content" id="complianceTabsContent">
+                                <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details-tab">
+                                    <!-- Profile Section -->
+                                    <div class="section-container">
+                                        <div class="section-header" data-bs-toggle="collapse" data-bs-target="#profileContent" aria-expanded="true" aria-controls="profileContent">
+                                            <h3>Profile</h3>
+                                            <i class="fas fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                        <div id="profileContent" class="collapse show">
+                                            <div class="section-content">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Country</div>
+                                                            <div class="data-value">Nigeria</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Business Name</div>
+                                                            <div class="data-value">PI Ventures</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Business/Registration Type</div>
+                                                            <div class="data-value">Unregistered/Starter business</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Contact Section -->
+                                    <div class="section-container">
+                                        <div class="section-header" data-bs-toggle="collapse" data-bs-target="#contactContent" aria-expanded="false" aria-controls="contactContent">
+                                            <h3>Contact</h3>
+                                            <i class="fas fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                        <div id="contactContent" class="collapse">
+                                            <div class="section-content">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Business Email</div>
+                                                            <div class="data-value">piventures@gmail.com</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Support Email</div>
+                                                            <div class="data-value">piventures@gmail.com</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Dispute Email</div>
+                                                            <div class="data-value">piventures@gmail.com</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Phone Number</div>
+                                                            <div class="data-value">08139329921</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Website</div>
+                                                            <div class="data-value">www.piventures.com</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Facebook</div>
+                                                            <div class="data-value">www.facebook.com/piven</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Business Address Section -->
+                                    <div class="section-container">
+                                        <div class="section-header" data-bs-toggle="collapse" data-bs-target="#addressContent" aria-expanded="false" aria-controls="addressContent">
+                                            <h3>Business Address</h3>
+                                            <i class="fas fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                        <div id="addressContent" class="collapse">
+                                            <div class="section-content">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Country</div>
+                                                            <div class="data-value">Nigeria</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">State</div>
+                                                            <div class="data-value">Lagos</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">City</div>
+                                                            <div class="data-value">Ikeja</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Street Address</div>
+                                                            <div class="data-value">21A Ikeja Street, Awolowo Avenue</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Identification Section -->
+                                    <div class="section-container">
+                                        <div class="section-header" data-bs-toggle="collapse" data-bs-target="#identificationContent" aria-expanded="false" aria-controls="identificationContent">
+                                            <h3>Identification</h3>
+                                            <i class="fas fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                        <div id="identificationContent" class="collapse">
+                                            <div class="section-content">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">First Name</div>
+                                                            <div class="data-value">Biayo</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Last Name</div>
+                                                            <div class="data-value">Lawal</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Date of Birth</div>
+                                                            <div class="data-value">01/03/2020</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Nationality</div>
+                                                            <div class="data-value">Nigeria</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Identification Number</div>
+                                                            <div class="data-value">20232028219392</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Proof of Address</div>
+                                                            <div class="data-value">
+                                                                <a href="#" class="download-link">b3IBgTe0PhwvbwPQbU9.pdf <i class="fas fa-download"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Personal Bank Account Section -->
+                                    <div class="section-container">
+                                        <div class="section-header" data-bs-toggle="collapse" data-bs-target="#bankContent" aria-expanded="false" aria-controls="bankContent">
+                                            <h3>Personal Bank Account</h3>
+                                            <i class="fas fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                        <div id="bankContent" class="collapse">
+                                            <div class="section-content">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Bank Name</div>
+                                                            <div class="data-value">United Bank of Africa</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Account Number</div>
+                                                            <div class="data-value">03910039900</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Account Name</div>
+                                                            <div class="data-value">Biayo Lawal</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Service Agreement Section -->
+                                    <div class="section-container">
+                                        <div class="section-header" data-bs-toggle="collapse" data-bs-target="#agreementContent" aria-expanded="false" aria-controls="agreementContent">
+                                            <h3>Service Agreement</h3>
+                                            <i class="fas fa-chevron-down toggle-icon"></i>
+                                        </div>
+                                        <div id="agreementContent" class="collapse">
+                                            <div class="section-content">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Full Name</div>
+                                                            <div class="data-value">Biayo Lawal</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Phone Number</div>
+                                                            <div class="data-value">08192996181</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Email Address</div>
+                                                            <div class="data-value">08192996181</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="data-row">
+                                                            <div class="data-label">Job Title</div>
+                                                            <div class="data-value">Founder</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="action-buttons">
+                                        <button type="button" class="btn-reject flex-fill">Reject</button>
+                                        <button type="button" class="btn-approve flex-fill">Approve</button>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade show active" id="verification" role="tabpanel" aria-labelledby="verification-tab">
+                            <div class="verification-timeline">
+                                <div class="verification-item">
+                                    <div class="check-icon">
+                                        <img src="../assets/green-check.svg" alt="">
+                                    </div>
+                                    <h3 class="verification-title">Address Verification</h3>
+                                    <p class="success-text">Successfully</p>
+                                </div>
+                                
+                                <div class="verification-item">
+                                    <div class="check-icon">
+                                        <img src="../assets/green-check.svg" alt="">
+                                    </div>
+                                    <h3 class="verification-title">Identity Verification</h3>
+                                    <div class="d-flex align-items-center mt-1">
+                                        <span class="bvn-badge">BVN</span>
+                                        <span class="verification-status">Verification successful</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="action-buttons">
+                                <button type="button" class="btn-reject">Reject</button>
+                                <button type="button" class="btn-approve">Approve</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+           
+            </div>
+          </div>
+        </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="verification.js"></script>
+</body>
+</html>
