@@ -2,6 +2,42 @@
 
          // JavaScript for handling the section toggle behavior
          document.addEventListener('DOMContentLoaded', function() {
+
+
+            // navabr mobile functionality
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    
+    if (mobileMenuToggle) {
+      mobileMenuToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+        sidebarOverlay.classList.toggle('active');
+        
+        const icon = this.querySelector('i');
+        if (sidebar.classList.contains('active')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        } else {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+    }
+ 
+    if (sidebarOverlay) {
+      sidebarOverlay.addEventListener('click', function() {
+        sidebar.classList.remove('active');
+        this.classList.remove('active');
+        const menuIcon = document.querySelector('.mobile-menu-toggle i');
+        if (menuIcon) {
+          menuIcon.classList.remove('fa-times');
+          menuIcon.classList.add('fa-bars');
+        }
+      });
+    }
+
+
             // Get all section headers
             const sectionHeaders = document.querySelectorAll('.section-header');
             
@@ -16,65 +52,7 @@
                 });
             });
             
-            // Buttons functionality
-            // const approveButton = document.getElementById('btn-approve');
-            // const rejectButton = document.querySelector('.btn-reject');
-
-
-            // const modalOverlay = document.getElementById('modalOverlay');
-            // const closeModal = document.getElementById('closeModal');
-            // const cancelButton = document.getElementById('cancelButton');
-            // const confirmButton = document.getElementById('confirmButton');
-            
-            // // Function to show the modal
-            // function showModal() {
-            //     modalOverlay.style.display = 'flex';
-            //     document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-            // }
-            
-            // // Function to hide the modal
-            // function hideModal() {
-            //     modalOverlay.style.display = 'none';
-            //     document.body.style.overflow = ''; // Restore scrolling
-            // }
-            
-            // // Event listeners
-            // approveButton.addEventListener('click', showModal);
-            
-            // closeModal.addEventListener('click', hideModal);
-            
-            // cancelButton.addEventListener('click', hideModal);
-            
-            // confirmButton.addEventListener('click', function() {
-            //     // Here you would add the logic to actually approve the compliance
-            //     alert('Compliance approved successfully!');
-            //     hideModal();
-            // });
-            
-            // // Close modal when clicking on the overlay
-            // modalOverlay.addEventListener('click', function(event) {
-            //     if (event.target === modalOverlay) {
-            //         hideModal();
-            //     }
-            // });
-            
-            // // Close modal when pressing Escape key
-            // document.addEventListener('keydown', function(event) {
-            //     if (event.key === 'Escape' && modalOverlay.style.display === 'flex') {
-            //         hideModal();
-            //     }
-            // });
-
-
-
-
-
-
-
-
-
-
-
+           
 
             const approveButton = document.getElementById('btn-approve');
             const rejectButton = document.getElementById('btn-reject');
